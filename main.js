@@ -23,7 +23,6 @@ let data = {
 }
 
 let vm = new Vue({
-    el: '#app',
     data: data,
     computed: {
         myData: function () {
@@ -31,6 +30,10 @@ let vm = new Vue({
         }
     }
 })
+
+vm.$mount('#app')
+
+
 
 // ゲッター = 変数が参照された時に関数を実行
 // セッター = メッセージが書き変わった時に関数を実行
