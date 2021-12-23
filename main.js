@@ -42,7 +42,7 @@ new Vue({
     },
     // template:'<h1>こんにちは、{{name}}さん</h1>'
     // }).$mount('#app2')
-    render: function (createElement) {
-        return createElement('h1','こんにちは' + this.name + 'さん');
+    render: function (h) {
+        return h('h1','こんにちは' + this.name + 'さん');
     },
 }).$mount('#app3')
