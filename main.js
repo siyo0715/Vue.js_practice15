@@ -17,12 +17,14 @@
 //     },
 // })
 
+let data = {
+    message: 'こんにちは',
+    name: '名前です'
+}
+
 let vm = new Vue({
     el: '#app',
-    data: {
-        message: 'こんにちは',
-        name: '名前です'
-    }
+    data: data
 })
 
 // ゲッター = 変数が参照された時に関数を実行
