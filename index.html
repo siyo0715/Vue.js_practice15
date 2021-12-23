@@ -9,12 +9,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app1">
+    <!-- <div id="app1">
         <p>{{message}}</p>
     </div>
     <div id="app2">
         <p>{{message}}</p>
         <button @click="changeMessage1">インスタンス一のメッセージを変更</button>
+    </div> -->
+    <div id="app">
+        <p>{{message}}</p>
+        <p>{{name}}</p>
+        <button @click="message = 'ボタンから変更'">変更</button>
     </div>
     <script src="main.js"></script>
 </body>
