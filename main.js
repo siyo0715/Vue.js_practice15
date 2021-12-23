@@ -38,7 +38,11 @@ vm.$mount('#app')
 
 new Vue({
     data: {
-        name:'山田'
+        name: '山田'
     },
-    template:'<h1>こんにちは、{{name}}さん</h1>'
-}).$mount('#app2')
+    // template:'<h1>こんにちは、{{name}}さん</h1>'
+    // }).$mount('#app2')
+    render: function (createElement) {
+        return createElement('h1','こんにちは' + this.name + 'さん');
+    },
+}).$mount('#app3')
