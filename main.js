@@ -28,12 +28,17 @@ let vm = new Vue({
         myData: function () {
             return this.$data;
         }
-    }
+    },
 })
 
 vm.$mount('#app')
 
-
-
 // ゲッター = 変数が参照された時に関数を実行
 // セッター = メッセージが書き変わった時に関数を実行
+
+new Vue({
+    data: {
+        name:'山田'
+    },
+    template:'<h1>こんにちは、{{name}}さん</h1>'
+}).$mount('#app2')
